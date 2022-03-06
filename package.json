@@ -1,0 +1,36 @@
+{
+  "name": "testnet-contracts",
+  "version": "1.1.0",
+  "description": "Dependencies and scripts for al-jabaal smart contracts",
+  "private": true,
+  "author": "Mohammed Abuelmaali",
+  "license": "ISC",
+  "workspaces": [
+    "testnet-contracts"
+  ],
+  "scripts": {
+    "relayer-1": "ebrelayer init ethereum ws://localhost:7545/  0x30753E4A8aad7F8597332E813735Def5dD395028 validator --make-claims=true --chain-id=al-jabaal",
+    "relayer-2": "ebrelayer init ethereum ws://localhost:7545/  0x30753E4A8aad7F8597332E813735Def5dD395028 validator --chain-id=al-jabaal",
+    "relayer-3": "ebrelayer init cosmos tcp://localhost:26657 http://localhost:7545 0x30753E4A8aad7F8597332E813735Def5dD395028",
+    "develop": "yarn workspace testnet-contracts develop",
+    "migrate": "yarn workspace testnet-contracts migrate",
+    "al-jabaal:all": "yarn migrate && yarn al-jabaal:setup && yarn token:mint && yarn token:approve 1000000000000000000 && yarn token:address && yarn al-jabaal:address",
+    "al-jabaal:address": "yarn workspace testnet-contracts al-jabaal:address",
+    "al-jabaal:validators": "yarn workspace testnet-contracts al-jabaal:validators",
+    "al-jabaal:hasLocked": "yarn workspace testnet-contracts al-jabaal:hasLocked",
+    "al-jabaal:getTx": "yarn workspace testnet-contracts al-jabaal:getTx",
+    "al-jabaal:setup": "yarn workspace testnet-contracts al-jabaal:setup",
+    "al-jabaal:lock": "yarn workspace testnet-contracts al-jabaal:lock",
+    "al-jabaal:burn": "yarn workspace testnet-contracts al-jabaal:burn",
+    "al-jabaal:check": "yarn workspace testnet-contracts al-jabaal:check",
+    "al-jabaal:process": "yarn workspace testnet-contracts al-jabaal:process",
+    "al-jabaal:addBridgeToken": "yarn workspace testnet-contracts al-jabaal:addBridgeToken",
+    "al-jabaal:getTokenBalance": "yarn workspace testnet-contracts al-jabaal:getTokenBalance",
+    "token:address": "yarn workspace testnet-contracts token:address",
+    "token:mint": "yarn workspace testnet-contracts token:mint",
+    "token:approve": "yarn workspace testnet-contracts token:approve"
+  },
+  "devDependencies": {
+    "@openzeppelin/test-helpers": "^0.5.6"
+  }
+}

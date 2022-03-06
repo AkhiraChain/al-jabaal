@@ -1,0 +1,55 @@
+{
+  "name": "testnet-contracts",
+  "version": "1.1.0",
+  "description": "Dependencies and scripts for al-jabaal smart contracts",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "author": "Mohammed ABuelmaali",
+  "license": "ISC",
+  "dependencies": {
+    "big-integer": "^1.6.48",
+    "bignumber.js": "^9.0.1",
+    "bluebird": "^3.5.1",
+    "cross-env": "5.0.5",
+    "dotenv": "^8.1.0",
+    "eth-lib": "^0.2.8",
+    "ethereumjs-util": "^7.0.6",
+    "keccak": "^3.0.1",
+    "lodash": "^4.17.19",
+    "truffle-contract": "^4.0.31",
+    "utf8": "^3.0.0"
+  },
+  "devDependencies": {
+    "@truffle/hdwallet-provider": "^1.1.0",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^3.0.0",
+    "ganache-cli": "^6.12.0",
+    "openzeppelin-solidity": "^2.1.3",
+    "truffle": "^5.1.48",
+    "web3": "^1.2.6",
+    "web3-utils": "^1.3.0"
+  },
+  "scripts": {
+    "develop": "ganache-cli -i 5777 -p 7545 -m 'candy maple cake sugar pudding cream honey rich smooth crumble sweet treat'",
+    "migrate": "npx truffle migrate --reset",
+    "al-jabaal:abi": "node scripts/formatAbi.js",
+    "al-jabaal:address": "npx truffle exec scripts/getBridgeRegistryAddress.js",
+    "al-jabaal:validators": "npx truffle exec scripts/getValidators.js",
+    "al-jabaal:hasLocked": "npx truffle exec scripts/hasLockedTokens.js",
+    "al-jabaal:getTx": "npx truffle exec scripts/getTxReceipt.js",
+    "al-jabaal:setup": "npx truffle exec scripts/setOracleAndBridgeBank.js",
+    "al-jabaal:lock": "npx truffle exec scripts/sendLockTx.js",
+    "al-jabaal:whiteList": "npx truffle exec scripts/sendUpdateWhiteList.js",
+    "al-jabaal:burn": "npx truffle exec scripts/sendBurnTx.js",
+    "al-jabaal:check": "npx truffle exec scripts/sendCheckProphecy.js",
+    "al-jabaal:process": "npx truffle exec scripts/sendProcessProphecy.js",
+    "al-jabaal:addBridgeToken": "npx truffle exec scripts/sendAddBridgeToken.js",
+    "al-jabaal:getTokenBalance": "npx truffle exec scripts/getTokenBalance.js",
+    "token:address": "npx truffle exec scripts/getTokenContractAddress.js",
+    "token:mint": "npx truffle exec scripts/mintTestTokens.js",
+    "token:approve": "npx truffle exec scripts/sendApproveTx.js"
+  }
+}

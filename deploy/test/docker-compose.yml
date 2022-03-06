@@ -1,0 +1,24 @@
+version: '3.7'
+services:
+  al-jabaal:
+    build:
+      context: .
+      dockerfile: ./deploy/test/Dockerfile
+    image: al-jabaal
+  validator:
+    ports:
+      - "26657:26657"
+      - "26658:26658"
+      - "26656:26656"
+    entrypoint:
+      - ebd
+      - start
+      - --rpc.laddr
+      - tcp://0.0.0.0:26657
+    image: al-jabaal
+  relayer:
+    image: al-jabaal
+    entrypoint:
+      - sh
+      - -c
+      - "echo password | ebrelayer init wss://ropsten.infura.io/ws 0xE147f184886eC70527e8A10723dfE18faE14c4a7 LogLock\\(bytes32,address,bytes,address,uint256,uint256\\) validator --chain-id=al-jabaal --rpc-url=tcp://validator:26657"

@@ -483,7 +483,7 @@ contract("BridgeBank", function (accounts) {
         "cosmos1pjtgu0vau2m52nrykdpztrt887aykue0hq7dfh"
       );
       this.recipient = accounts[4];
-      this.ethereumSymbol = "al-jabaalETH";
+      this.ethereumSymbol = "peggyeth";
       this.ethereumToken = "0x0000000000000000000000000000000000000000";
       this.weiAmount = web3.utils.toWei("0.25", "ether");
       this.halfWeiAmount = web3.utils.toWei("0.125", "ether");

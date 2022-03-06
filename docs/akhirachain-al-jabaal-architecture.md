@@ -1,11 +1,11 @@
 # **Ethereum Cosmos Bridge Architecture**
 
 ## Changelog
--First Sifchain Draft WIP: Austin Haines (Barefoot Coders) October 8, 2020
+-First akhirachain Draft WIP: Austin Haines (Barefoot Coders) October 8, 2020
 
 ## Context
 
-al-jabaal focuses on core features for bidirectional transfers. This document outlines Sifchain's al-jabaal implementation. al-jabaal includes functionality on the Ethereum network to lock and unlock Ethereum native tokens, as well as to burn and mint Cosmos pegged assets. On Cosmos al-jabaal includes functionality to lock and unlock Cosmos native tokens, as well as to burn and mint Ethereum pegged assets.
+al-jabaal focuses on core features for bidirectional transfers. This document outlines akhirachain's al-jabaal implementation. al-jabaal includes functionality on the Ethereum network to lock and unlock Ethereum native tokens, as well as to burn and mint Cosmos pegged assets. On Cosmos al-jabaal includes functionality to lock and unlock Cosmos native tokens, as well as to burn and mint Ethereum pegged assets.
 
 
 The architecture consists of 5 parts. Each part, and the logical flow of operations is described below.
@@ -62,7 +62,7 @@ The process is as follows:
 - Tokens are either burned or locked
 - A `MsgBurn` or `MsgLock` event is emitted to be received by the Relayer
 
-**IBC:** This module is also responsible for sending and receiving transactions to/from the IBC Module which facilitates communication with compatible Cosmos chains. This is how pegged tokens are transferred between the Ethereum - Cosmos Peg Zone and other Cosmos chains such as Sifchain where they can be used to swap, provide liquidity to liquidity pools, etc.
+**IBC:** This module is also responsible for sending and receiving transactions to/from the IBC Module which facilitates communication with compatible Cosmos chains. This is how pegged tokens are transferred between the Ethereum - Cosmos Peg Zone and other Cosmos chains such as akhirachain where they can be used to swap, provide liquidity to liquidity pools, etc.
 
 ## IBC 
 
@@ -70,11 +70,11 @@ In order to facilitate cross chain communication amongst IBC compatible chains t
 
 **IBC Module:**
 
-This module receives transactions from the EthBridge Module and emits an event to be received by the IBC Relayer. It also receives incoming transactions from other IBC chains such as Sifchain and forwards them to the EthBridge Module.
+This module receives transactions from the EthBridge Module and emits an event to be received by the IBC Relayer. It also receives incoming transactions from other IBC chains such as akhirachain and forwards them to the EthBridge Module.
 
 **IBC Relayer:**
 
-This relayer listens to events from the IBC Module and forwards the transactions to external Cosmos chains such as Sifchain.
+This relayer listens to events from the IBC Module and forwards the transactions to external Cosmos chains such as akhirachain.
 
 ## The Oracle Module
 
@@ -98,7 +98,7 @@ The process is as follows:
 - If the claim is successful, new tokens representing Ethereum are minted via the Bank module
 
 ## al-jabaal <-> Ethereum Communication
-Right now, al-jabaal validators query external Ethereum nodes to receive updates on the status of Ethereum transactions via Ethereum events.  This can lead to failure states. Sifchain plans to upgrade the al-jabaal Relayer to not use the event subscription service. Instead each al-jabaal validator will sit alongside an Ethereum full node and scan each block and transaction.
+Right now, al-jabaal validators query external Ethereum nodes to receive updates on the status of Ethereum transactions via Ethereum events.  This can lead to failure states. akhirachain plans to upgrade the al-jabaal Relayer to not use the event subscription service. Instead each al-jabaal validator will sit alongside an Ethereum full node and scan each block and transaction.
 
 ## Cosmos Messages and Ethereum Logs
 
@@ -112,7 +112,7 @@ Right now, al-jabaal validators query external Ethereum nodes to receive updates
 
 ![MintingPeggedETHToken](images/MintingPeggedETHToken.png)
 ![MigratePeggedTokenToSif](images/MigratePeggedTokenToSif.png)
-![MigrateTokenSifchainToPeg](images/MigrateTokenSifchainToPeg.png)
+![MigrateTokenakhirachainToPeg](images/MigrateTokenakhirachainToPeg.png)
 ![MintPeggedRowan](images/MintPeggedRowan.png)
 ![BurnPeggedcERC20](images/BurnPeggedcERC20.png)
 ![BurnPeggedeRowan](images/BurnPeggedeRowan.png)

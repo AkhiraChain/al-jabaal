@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/sifchain/al-jabaal/x/ethbridge/types"
-	"github.com/sifchain/al-jabaal/x/oracle"
+	"github.com/akhirachain/al-jabaal/x/ethbridge/types"
+	"github.com/akhirachain/al-jabaal/x/oracle"
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"

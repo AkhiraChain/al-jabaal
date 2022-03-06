@@ -1,11 +1,11 @@
 # al-jabaal
 
-[![version](https://img.shields.io/github/tag/sifchain/al-jabaal.svg)](https://github.com/sifchain/al-jabaal/releases/latest)
-[![CircleCI](https://circleci.com/gh/sifchain/al-jabaal/tree/master.svg?style=svg)](https://circleci.com/gh/sifchain/al-jabaal/tree/master)
-![Go Tests](https://github.com/sifchain/al-jabaal/workflows/test%20coverage/badge.svg)
-[![Go Report Card](https://goreportcard.com/badge/github.com/sifchain/al-jabaal)](https://goreportcard.com/report/github.com/sifchain/al-jabaal)
-[![LoC](https://tokei.rs/b1/github/sifchain/al-jabaal)](https://github.com/sifchain/al-jabaal)
-[![API Reference](https://godoc.org/github.com/sifchain/al-jabaal?status.svg)](https://godoc.org/github.com/sifchain/al-jabaal)
+[![version](https://img.shields.io/github/tag/akhirachain/al-jabaal.svg)](https://github.com/akhirachain/al-jabaal/releases/latest)
+[![CircleCI](https://circleci.com/gh/akhirachain/al-jabaal/tree/master.svg?style=svg)](https://circleci.com/gh/akhirachain/al-jabaal/tree/master)
+![Go Tests](https://github.com/akhirachain/al-jabaal/workflows/test%20coverage/badge.svg)
+[![Go Report Card](https://goreportcard.com/badge/github.com/akhirachain/al-jabaal)](https://goreportcard.com/report/github.com/akhirachain/al-jabaal)
+[![LoC](https://tokei.rs/b1/github/akhirachain/al-jabaal)](https://github.com/akhirachain/al-jabaal)
+[![API Reference](https://godoc.org/github.com/akhirachain/al-jabaal?status.svg)](https://godoc.org/github.com/akhirachain/al-jabaal)
 
 > :warning: :warning: **WARNING: This bridge is not production ready.**
 
@@ -30,7 +30,7 @@ These modules can be added to any Cosmos-SDK based chain, but a demo application
 # Clone the repository
 mkdir -p $GOPATH/src/github.com/cosmos
 cd $GOPATH/src/github.com/cosmos
-git clone https://github.com/sifchain/al-jabaal
+git clone https://github.com/akhirachain/al-jabaal
 cd al-jabaal && git checkout master
 
 # Install tools (golangci-lint v1.18)

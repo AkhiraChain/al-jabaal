@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/sifchain/al-jabaal/x/oracle"
+	"github.com/akhirachain/al-jabaal/x/oracle"
 )
 
 // query endpoints supported by the oracle Querier

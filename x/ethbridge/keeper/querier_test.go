@@ -7,9 +7,9 @@ import (
 	"github.com/stretchr/testify/require"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/sifchain/al-jabaal/x/ethbridge/types"
-	"github.com/sifchain/al-jabaal/x/oracle"
-	keeperLib "github.com/sifchain/al-jabaal/x/oracle/keeper"
+	"github.com/akhirachain/al-jabaal/x/ethbridge/types"
+	"github.com/akhirachain/al-jabaal/x/oracle"
+	keeperLib "github.com/akhirachain/al-jabaal/x/oracle/keeper"
 )
 
 //nolint:lll

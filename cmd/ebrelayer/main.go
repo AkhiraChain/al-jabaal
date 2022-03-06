@@ -20,10 +20,10 @@ import (
 	"github.com/tendermint/tendermint/libs/cli"
 	tmLog "github.com/tendermint/tendermint/libs/log"
 
-	"github.com/sifchain/al-jabaal/app"
-	"github.com/sifchain/al-jabaal/cmd/ebrelayer/contract"
-	"github.com/sifchain/al-jabaal/cmd/ebrelayer/relayer"
-	"github.com/sifchain/al-jabaal/cmd/ebrelayer/txs"
+	"github.com/akhirachain/al-jabaal/app"
+	"github.com/akhirachain/al-jabaal/cmd/ebrelayer/contract"
+	"github.com/akhirachain/al-jabaal/cmd/ebrelayer/relayer"
+	"github.com/akhirachain/al-jabaal/cmd/ebrelayer/txs"
 )
 
 var cdc *codec.Codec

@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/sifchain/al-jabaal/x/oracle/types"
+	"github.com/akhirachain/al-jabaal/x/oracle/types"
 	"github.com/stretchr/testify/require"
 )
 

@@ -3,9 +3,9 @@ package ethbridge
 import (
 	"encoding/json"
 
+	"github.com/akhirachain/al-jabaal/x/ethbridge/client"
+	"github.com/akhirachain/al-jabaal/x/ethbridge/types"
 	"github.com/gorilla/mux"
-	"github.com/sifchain/al-jabaal/x/ethbridge/client"
-	"github.com/sifchain/al-jabaal/x/ethbridge/types"
 	"github.com/spf13/cobra"
 
 	abci "github.com/tendermint/tendermint/abci/types"

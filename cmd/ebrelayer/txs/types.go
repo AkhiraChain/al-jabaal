@@ -3,8 +3,8 @@ package txs
 import (
 	"math/big"
 
+	"github.com/akhirachain/al-jabaal/cmd/ebrelayer/types"
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/sifchain/al-jabaal/cmd/ebrelayer/types"
 )
 
 // OracleClaim contains data required to make an OracleClaim

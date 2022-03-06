@@ -6,7 +6,7 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	ethbridge "github.com/sifchain/al-jabaal/x/ethbridge/types"
+	ethbridge "github.com/akhirachain/al-jabaal/x/ethbridge/types"
 )
 
 // Event enum containing supported chain events

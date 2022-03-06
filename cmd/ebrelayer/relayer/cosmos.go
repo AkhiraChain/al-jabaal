@@ -13,8 +13,8 @@ import (
 	tmClient "github.com/tendermint/tendermint/rpc/client/http"
 	tmTypes "github.com/tendermint/tendermint/types"
 
-	"github.com/sifchain/al-jabaal/cmd/ebrelayer/txs"
-	"github.com/sifchain/al-jabaal/cmd/ebrelayer/types"
+	"github.com/akhirachain/al-jabaal/cmd/ebrelayer/txs"
+	"github.com/akhirachain/al-jabaal/cmd/ebrelayer/types"
 )
 
 // TODO: Move relay functionality out of CosmosSub into a new Relayer parent struct

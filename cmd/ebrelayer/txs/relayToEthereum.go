@@ -11,9 +11,9 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/ethclient"
 
-	cosmosbridge "github.com/sifchain/al-jabaal/cmd/ebrelayer/contract/generated/bindings/cosmosbridge"
-	oracle "github.com/sifchain/al-jabaal/cmd/ebrelayer/contract/generated/bindings/oracle"
-	"github.com/sifchain/al-jabaal/cmd/ebrelayer/types"
+	cosmosbridge "github.com/akhirachain/al-jabaal/cmd/ebrelayer/contract/generated/bindings/cosmosbridge"
+	oracle "github.com/akhirachain/al-jabaal/cmd/ebrelayer/contract/generated/bindings/oracle"
+	"github.com/akhirachain/al-jabaal/cmd/ebrelayer/types"
 )
 
 const (

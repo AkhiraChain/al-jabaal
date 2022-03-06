@@ -1,6 +1,6 @@
 FROM golang:1.13
 
-WORKDIR /go/src/github.com/sifchain/al-jabaal
+WORKDIR /go/src/github.com/akhirachain/al-jabaal
 
 COPY go.mod .
 COPY go.sum .

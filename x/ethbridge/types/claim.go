@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"strconv"
 
+	"github.com/akhirachain/al-jabaal/x/oracle"
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/sifchain/al-jabaal/x/oracle"
 )
 
 // EthBridgeClaim is a structure that contains all the data for a particular bridge claim

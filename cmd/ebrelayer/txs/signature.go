@@ -11,7 +11,7 @@ import (
 	"github.com/joho/godotenv"
 	solsha3 "github.com/miguelmota/go-solidity-sha3"
 
-	"github.com/sifchain/al-jabaal/cmd/ebrelayer/types"
+	"github.com/akhirachain/al-jabaal/cmd/ebrelayer/types"
 )
 
 // LoadPrivateKey loads the validator's private key from environment variables

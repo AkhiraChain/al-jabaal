@@ -23,8 +23,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/bank"
 	bankcmd "github.com/cosmos/cosmos-sdk/x/bank/client/cli"
 
-	"github.com/sifchain/al-jabaal/app"
-	"github.com/sifchain/al-jabaal/x/ethbridge/types"
+	"github.com/akhirachain/al-jabaal/app"
+	"github.com/akhirachain/al-jabaal/x/ethbridge/types"
 )
 
 func main() {

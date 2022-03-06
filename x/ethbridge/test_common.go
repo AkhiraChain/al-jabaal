@@ -5,11 +5,11 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
+	oracle "github.com/akhirachain/al-jabaal/x/oracle"
+	keeperLib "github.com/akhirachain/al-jabaal/x/oracle/keeper"
 	"github.com/cosmos/cosmos-sdk/x/auth"
 	"github.com/cosmos/cosmos-sdk/x/bank"
 	"github.com/cosmos/cosmos-sdk/x/supply"
-	oracle "github.com/sifchain/al-jabaal/x/oracle"
-	keeperLib "github.com/sifchain/al-jabaal/x/oracle/keeper"
 )
 
 func CreateTestHandler(

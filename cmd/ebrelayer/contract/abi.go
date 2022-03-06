@@ -11,8 +11,8 @@ import (
 	"runtime"
 	"strings"
 
+	"github.com/akhirachain/al-jabaal/cmd/ebrelayer/txs"
 	"github.com/ethereum/go-ethereum/accounts/abi"
-	"github.com/sifchain/al-jabaal/cmd/ebrelayer/txs"
 )
 
 // File paths to al-jabaal smart contract ABIs

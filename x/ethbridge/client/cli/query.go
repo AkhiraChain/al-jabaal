@@ -7,9 +7,9 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
+	"github.com/akhirachain/al-jabaal/x/ethbridge/types"
 	"github.com/cosmos/cosmos-sdk/client/context"
 	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/sifchain/al-jabaal/x/ethbridge/types"
 )
 
 // GetCmdGetEthBridgeProphecy queries information about a specific prophecy

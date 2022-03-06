@@ -5,9 +5,9 @@ import (
 
 	"github.com/tendermint/tendermint/libs/log"
 
+	"github.com/akhirachain/al-jabaal/x/oracle/types"
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/sifchain/al-jabaal/x/oracle/types"
 )
 
 // Keeper maintains the link to data storage and

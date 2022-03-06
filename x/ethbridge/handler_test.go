@@ -6,11 +6,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/sifchain/al-jabaal/x/oracle"
+	"github.com/akhirachain/al-jabaal/x/oracle"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/sifchain/al-jabaal/x/ethbridge/types"
+	"github.com/akhirachain/al-jabaal/x/ethbridge/types"
 	"github.com/stretchr/testify/require"
 )
 

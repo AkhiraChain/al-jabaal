@@ -3,7 +3,7 @@ package types
 import (
 	"testing"
 
-	"github.com/sifchain/al-jabaal/x/oracle"
+	"github.com/akhirachain/al-jabaal/x/oracle"
 
 	"github.com/stretchr/testify/require"
 

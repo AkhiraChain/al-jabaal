@@ -12,7 +12,7 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/sifchain/al-jabaal/x/ethbridge/types"
+	"github.com/akhirachain/al-jabaal/x/ethbridge/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )

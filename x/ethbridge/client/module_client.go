@@ -1,11 +1,11 @@
 package client
 
 import (
+	"github.com/akhirachain/al-jabaal/x/ethbridge/client/cli"
+	"github.com/akhirachain/al-jabaal/x/ethbridge/client/rest"
 	"github.com/cosmos/cosmos-sdk/client/context"
 	"github.com/cosmos/cosmos-sdk/codec"
 	"github.com/gorilla/mux"
-	"github.com/sifchain/al-jabaal/x/ethbridge/client/cli"
-	"github.com/sifchain/al-jabaal/x/ethbridge/client/rest"
 	"github.com/spf13/cobra"
 
 	"github.com/cosmos/cosmos-sdk/client/flags"
